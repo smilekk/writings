@@ -3,18 +3,18 @@ require "rvm/capistrano"
 require 'sidekiq/capistrano'
 require 'bundler/capistrano'
 
-set :application, "writings.io"
-set :repository,  "git@github.com:chloerei/writings.git"
+set :application, "uulex.com"
+set :repository,  "git@github.com:smilekk/writings.git"
 set :scm, "git"
 set :branch, "master"
 
-set :user, "rei"
-set :deploy_to, "/home/rei/#{application}"
+set :user, "smilekk"
+set :deploy_to, "/home/smilekk/#{application}"
 set :use_sudo, false
 
-role :web, "writings.io"
-role :app, "writings.io"
-role :db,  "writings.io", :primary => true
+role :web, "uulex.com"
+role :app, "uulex.com"
+role :db,  "uulex.com", :primary => true
 
 namespace :deploy do
   task :start do ; end

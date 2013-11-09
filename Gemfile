@@ -1,7 +1,6 @@
 source 'http://ruby.taobao.org/'
 
 gem 'rails', '4.0.0'
-
 gem 'mongoid', '~> 4.0.0', :github => 'mongoid/mongoid'
 gem 'bcrypt-ruby', '~> 3.0.1'
 gem 'kaminari', '~> 0.14.1'
