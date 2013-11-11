@@ -2,7 +2,7 @@
 /db/*.sqlite3
 /log/*.log
 /tmp
-/config/app_config.yml
+
 /config/mongoid.yml
 /public/uploads
 /data/*

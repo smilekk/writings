@@ -1,0 +1,47 @@
+defaults: &defaults
+  # Use `rake secret` to generate new key and replace it in your production env,
+  secret_key_base: '31e9caa9de3f922080946378c477af7af51999414cfbcb36a9a8d011458854089163bfe67901f376c24e02df02d040c9d708019a93384ddac8a250098c8310ae'
+
+  # Main site setting
+  host: 'uulex.com'
+  site_name: 'UULEX'
+  ssl: false
+
+  # Admin access
+  admin_emails:
+    - 'yukai.kk@gmail.com'
+
+  google_analytics_id: ''
+
+  # Alipay service, for payment
+  alipay:
+    pid: '2088002158700803'
+    key: 'wbvc4se8u1dsl966u91dc0bxcwhlhg2y'
+    seller_email: 'tylsoft@gmail.com'
+
+  # Amazon S3, for attachment
+  s3:
+    aws_access_key_id: ''
+    aws_secret_access_key: ''
+    region: ''
+    fog_directory: '' # bucket
+
+  # Amazon SES, for System email
+  ses:
+    user_name:
+    password:
+
+  # Google recaptcha server
+  recaptcha:
+    public_key: '6LflEOoSAAAAAPY-zp98_96gFDMqXBtTyvuZWQ7A'
+    private_key: '6LflEOoSAAAAABF4z5_KEtKh5Cq7c4epDJj6B-IB'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  host: 'test.host'
+
+production:
+  <<: *defaults
