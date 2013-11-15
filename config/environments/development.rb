@@ -23,4 +23,15 @@ Writings::Application.configure do
   config.assets.debug = true
 
   config.middleware.insert_before(Rack::Lock, Rack::LiveReload)
+
+  ActionMailer::Base.delivery_method = :smtp 
+  ActionMailer::Base.smtp_settings = { 
+      :address => "smtp.siteilex.com", 
+      :port => 25, 
+      #:domain => "www.163.com", 
+      :authentication => :login, 
+      :user_name => "postmaster@noreply.siteilex.com", 
+      :password => "031677"   
+  }
+  
 end

@@ -81,9 +81,10 @@ Writings::Application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "email-smtp.us-east-1.amazonaws.com",
-    :user_name => APP_CONFIG['ses']['user_name'],
-    :password => APP_CONFIG['ses']['password'],
+    :address => APP_CONFIG['ilexmail']['smtp'],
+    :port => 25, 
+    :user_name => APP_CONFIG['ilexmail']['user_name'],
+    :password => APP_CONFIG['ilexmail']['password'],
     :authentication => :login,
     :enable_starttls_auto => true
   }

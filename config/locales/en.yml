@@ -23,11 +23,11 @@ en:
   urlname_valid_message: Allow character, number and '-'
   page_not_found: Page not Found
   server_error: Server Error
-  export_task_success_email_subject: Writings.io - Export Success
-  import_task_success_email_subject: Writings.io - Import Parse Success
-  order_payment_success_email_subject: Writings.io - Order Payment Success
-  order_cancel_email_subject: Writings.io - Order Canceled
-  password_reset_email_subject: Writings.io - Password Reset
+  export_task_success_email_subject: Uulex.com - Export Success
+  import_task_success_email_subject: Uulex.com - Import Parse Success
+  order_payment_success_email_subject: Uulex.com - Order Payment Success
+  order_cancel_email_subject: Uulex.com - Order Canceled
+  password_reset_email_subject: Uulex.com - Password Reset
   order_paid_message: Payment success, happy writings!
   order_pending_message: Payment is processing, you will receive a email when it's
     done.

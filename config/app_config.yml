@@ -3,7 +3,8 @@ defaults: &defaults
   secret_key_base: '31e9caa9de3f922080946378c477af7af51999414cfbcb36a9a8d011458854089163bfe67901f376c24e02df02d040c9d708019a93384ddac8a250098c8310ae'
 
   # Main site setting
-  host: 'uulex.com'
+  #host: 'uulex.com'
+  host: 'io.com'
   site_name: 'UULEX'
   ssl: false
 
@@ -11,7 +12,7 @@ defaults: &defaults
   admin_emails:
     - 'yukai.kk@gmail.com'
 
-  google_analytics_id: ''
+  google_analytics_id: 'UA-45703128-1'
 
   # Alipay service, for payment
   alipay:
@@ -26,10 +27,11 @@ defaults: &defaults
     region: ''
     fog_directory: '' # bucket
 
-  # Amazon SES, for System email
-  ses:
-    user_name:
-    password:
+  # ilexmail for System email
+  ilexmail:
+    smtp: 'smtp.siteilex.com'
+    user_name: 'postmaster@noreply.siteilex.com'
+    password:  '031677'
 
   # Google recaptcha server
   recaptcha:
