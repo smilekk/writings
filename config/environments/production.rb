@@ -79,13 +79,13 @@ Writings::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address => APP_CONFIG['ilexmail']['smtp'],
-    :port => '25', 
-    :user_name => APP_CONFIG['ilexmail']['user_name'],
-    :password => APP_CONFIG['ilexmail']['password'],
-    :authentication => :login,
-    :enable_starttls_auto => true
+  ActionMailer::Base.delivery_method = :smtp 
+  ActionMailer::Base.smtp_settings = { 
+      :address => "smtp.siteilex.com", 
+      :port => 25, 
+      #:domain => "www.163.com", 
+      :authentication => :login, 
+      :user_name => "postmaster@noreply.siteilex.com", 
+      :password => "031677"   
   }
 end

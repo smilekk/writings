@@ -27,7 +27,7 @@ Writings::Application.configure do
   ActionMailer::Base.delivery_method = :smtp 
   ActionMailer::Base.smtp_settings = { 
       :address => "smtp.siteilex.com", 
-      :port => "25", 
+      :port => 25, 
       #:domain => "www.163.com", 
       :authentication => :login, 
       :user_name => "postmaster@noreply.siteilex.com", 
