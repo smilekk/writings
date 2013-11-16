@@ -329,7 +329,7 @@ DEPENDENCIES
   mongoid-grid_fs!
   mongoid_rails_migrations (~> 1.0.1)
   mousetrap-rails (~> 0.0.11)
-  nokogiri (~> 1.5.9)
+  nokogiri (~> 1.5.10)
   pandoc-ruby (~> 0.7.0)
   quiet_assets (~> 1.0.2)
   qunit-rails (~> 0.0.3)

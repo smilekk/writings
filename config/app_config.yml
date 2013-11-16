@@ -4,7 +4,6 @@ defaults: &defaults
 
   # Main site setting
   host: 'uulex.com'
-  #host: 'io.com'
   site_name: 'UULEX'
   ssl: false
 
