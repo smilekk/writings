@@ -26,12 +26,6 @@ defaults: &defaults
     region: ''
     fog_directory: '' # bucket
 
-  # ilexmail for System email
-  ilexmail:
-    smtp: 'smtp.siteilex.com'
-    user_name: 'postmaster@noreply.siteilex.com'
-    password:  '031677'
-
   # Google recaptcha server
   recaptcha:
     public_key: '6LflEOoSAAAAAPY-zp98_96gFDMqXBtTyvuZWQ7A'
